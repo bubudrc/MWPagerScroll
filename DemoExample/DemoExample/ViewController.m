@@ -25,7 +25,7 @@
                                             [UIImage imageNamed:@"title3"],
                                             [UIImage imageNamed:@"title4"],];
     self.pagerImagesView.hasButtons = YES;
-    self.pagerImagesView.pagerPosition = topPosition;
+    self.pagerImagesView.pagerPosition = bottomPosition;
 }
 
 - (void)didReceiveMemoryWarning {
