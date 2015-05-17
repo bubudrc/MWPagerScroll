@@ -209,14 +209,10 @@
     
     switch (sender.tag) {
         case 100://leftButton
-            if(self.pageControl.currentPage > 0){
-                newPosition = self.scrollView.contentOffset.x-width;
-            }
+            newPosition = self.scrollView.contentOffset.x-width;
             break;
         case 101://rightButton
-            if(self.pageControl.currentPage < (self.pageControl.numberOfPages - 1)){
-                newPosition = self.scrollView.contentOffset.x+width;
-            }
+            newPosition = self.scrollView.contentOffset.x+width;
             break;
             
         default:

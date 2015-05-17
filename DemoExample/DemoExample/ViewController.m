@@ -24,8 +24,18 @@
                                             [UIImage imageNamed:@"title2"],
                                             [UIImage imageNamed:@"title3"],
                                             [UIImage imageNamed:@"title4"],];
-    self.pagerImagesView.hasButtons = YES;
     self.pagerImagesView.pagerPosition = bottomPosition;
+    
+    
+    MWPagerScroll *pagerText = [[MWPagerScroll alloc] initWithFrame:CGRectMake(10, 250, self.pagerImagesView.frame.size.width, self.pagerImagesView.frame.size.height) elementsToShow:@[@"Text a", @"Another text", @"Fully text"]];
+    
+    pagerText.backgroundColor = [UIColor redColor];
+    pagerText.hasButtons = YES;
+    
+    [self.view addSubview:pagerText];
+                 
+                        
+                                
 }
 
 - (void)didReceiveMemoryWarning {
